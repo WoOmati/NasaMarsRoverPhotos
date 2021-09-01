@@ -11,7 +11,7 @@ class NasaPhotoService {
     let networkService = NetworkService()
     let photosURL = URL(string: "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?page%20=1&api_key=DEMO_KEY") ?? nil
     
-    func fetchPhotos(response: @escaping (LatestPhotos?) -> Void) {
+    func obtainPhotos(response: @escaping (LatestPhotos?) -> Void) {
         guard let photosURL = photosURL else { return }
         networkService.request(url: photosURL) { (result) in
             switch result {
@@ -30,4 +30,12 @@ class NasaPhotoService {
             }
         }
     }
+    func obtainImage(from url: URL, response: @escaping (Data?) -> Void) {
+            networkService.request(url: url) { result in
+                switch result {
+                case .success(let data): response(data)
+                case .failure: response(nil)
+                }
+            }
+        }
 }

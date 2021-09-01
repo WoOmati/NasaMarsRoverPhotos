@@ -11,7 +11,7 @@ class PhotoGalleryViewController: UIViewController {
     let nasaPhotoService = NasaPhotoService()
     var photos: [Photo] = []
     
-    @IBOutlet weak var TableView: UITableView!
+    @IBOutlet weak var photosTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,17 +21,18 @@ class PhotoGalleryViewController: UIViewController {
     }
     
     private func obtainPhotos() {
-        nasaPhotoService.fetchPhotos { [weak self] latestPhotos in
+        nasaPhotoService.obtainPhotos { [weak self] latestPhotos in
             guard let latestPhotos = latestPhotos else { return }
             self?.photos = latestPhotos.photos
+            self?.photosTableView.reloadData()
+            // to do брать 25 первых строк
         }
     }
     
     private func setupCollectionView() {
-        TableView.delegate = self
-        TableView.dataSource = self
-        TableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
+        photosTableView.delegate = self
+        photosTableView.dataSource = self
+        photosTableView.register(UINib(nibName: "PhotoTableViewCell", bundle: nil), forCellReuseIdentifier: "photoCell")
     }
 
 }
@@ -41,10 +42,26 @@ extension PhotoGalleryViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = TableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let photos = photos.
-        return cell
-    }
+            let cell = photosTableView.dequeueReusableCell(withIdentifier: "photoCell", for: indexPath) as! PhotoTableViewCell
+            DispatchQueue.global().async {
+                if let url = URL(string: self.photos[indexPath.row].imageUrl) {
+                    DispatchQueue.global().async {
+                        let data = try? Data(contentsOf: url)
+                        if let data = data {
+                            DispatchQueue.main.async {
+                                cell.photoImage.image = UIImage(data: data)
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            return cell
+        }
+        
+        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 220
+        }
     
     
 }

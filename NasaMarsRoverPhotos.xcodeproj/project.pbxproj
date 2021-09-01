@@ -15,9 +15,12 @@
 		FA63133026DE87E400134FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA63132E26DE87E400134FAB /* Main.storyboard */; };
 		FA63133226DE87E600134FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA63133126DE87E600134FAB /* Assets.xcassets */; };
 		FA63133526DE87E600134FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA63133326DE87E600134FAB /* LaunchScreen.storyboard */; };
-		FA63135926DED5CA00134FAB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63135826DED5C900134FAB /* Model.swift */; };
+		FA63135926DED5CA00134FAB /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63135826DED5C900134FAB /* PhotoModel.swift */; };
 		FA6CF39F26DFCCCC00EA0A61 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CF39D26DFCCCC00EA0A61 /* PhotoTableViewCell.swift */; };
 		FA6CF3A026DFCCCC00EA0A61 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CF39E26DFCCCC00EA0A61 /* PhotoTableViewCell.xib */; };
+		FA6CF3A326DFFA8100EA0A61 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CF3A226DFFA8100EA0A61 /* FullScreenViewController.swift */; };
+		FA6CF3A626E00ED400EA0A61 /* FullScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CF3A426E00ED400EA0A61 /* FullScreenCollectionViewCell.swift */; };
+		FA6CF3A726E00ED400EA0A61 /* FullScreenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CF3A526E00ED400EA0A61 /* FullScreenCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +34,12 @@
 		FA63133126DE87E600134FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA63133426DE87E600134FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA63133626DE87E600134FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA63133F26DE87E700134FAB /* NasaMarsRoverPhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaMarsRoverPhotosTests.swift; sourceTree = "<group>"; };
-		FA63134126DE87E700134FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA63134A26DE87E700134FAB /* NasaMarsRoverPhotosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaMarsRoverPhotosUITests.swift; sourceTree = "<group>"; };
-		FA63134C26DE87E700134FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA63135826DED5C900134FAB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FA63135826DED5C900134FAB /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		FA6CF39D26DFCCCC00EA0A61 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		FA6CF39E26DFCCCC00EA0A61 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
+		FA6CF3A226DFFA8100EA0A61 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
+		FA6CF3A426E00ED400EA0A61 /* FullScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA6CF3A526E00ED400EA0A61 /* FullScreenCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullScreenCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				FA63132726DE87E400134FAB /* NasaMarsRoverPhotos */,
-				FA63133E26DE87E700134FAB /* NasaMarsRoverPhotosTests */,
-				FA63134926DE87E700134FAB /* NasaMarsRoverPhotosUITests */,
 				FA63132626DE87E400134FAB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,13 +72,14 @@
 		FA63132726DE87E400134FAB /* NasaMarsRoverPhotos */ = {
 			isa = PBXGroup;
 			children = (
+				FA63132E26DE87E400134FAB /* Main.storyboard */,
 				FA63132826DE87E400134FAB /* AppDelegate.swift */,
 				FA63132A26DE87E400134FAB /* SceneDelegate.swift */,
 				FA63132C26DE87E400134FAB /* PhotoGalleryViewController.swift */,
+				FA6CF3A226DFFA8100EA0A61 /* FullScreenViewController.swift */,
 				FA58ACC126DEEB1600E83550 /* NetworkService.swift */,
 				FA58ACCB26DFB88C00E83550 /* NasaPhotoService.swift */,
-				FA63135826DED5C900134FAB /* Model.swift */,
-				FA63132E26DE87E400134FAB /* Main.storyboard */,
+				FA63135826DED5C900134FAB /* PhotoModel.swift */,
 				FA6CF3A126DFCE1600EA0A61 /* cells */,
 				FA63133126DE87E600134FAB /* Assets.xcassets */,
 				FA63133326DE87E600134FAB /* LaunchScreen.storyboard */,
@@ -87,29 +88,13 @@
 			path = NasaMarsRoverPhotos;
 			sourceTree = "<group>";
 		};
-		FA63133E26DE87E700134FAB /* NasaMarsRoverPhotosTests */ = {
-			isa = PBXGroup;
-			children = (
-				FA63133F26DE87E700134FAB /* NasaMarsRoverPhotosTests.swift */,
-				FA63134126DE87E700134FAB /* Info.plist */,
-			);
-			path = NasaMarsRoverPhotosTests;
-			sourceTree = "<group>";
-		};
-		FA63134926DE87E700134FAB /* NasaMarsRoverPhotosUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FA63134A26DE87E700134FAB /* NasaMarsRoverPhotosUITests.swift */,
-				FA63134C26DE87E700134FAB /* Info.plist */,
-			);
-			path = NasaMarsRoverPhotosUITests;
-			sourceTree = "<group>";
-		};
 		FA6CF3A126DFCE1600EA0A61 /* cells */ = {
 			isa = PBXGroup;
 			children = (
 				FA6CF39D26DFCCCC00EA0A61 /* PhotoTableViewCell.swift */,
 				FA6CF39E26DFCCCC00EA0A61 /* PhotoTableViewCell.xib */,
+				FA6CF3A426E00ED400EA0A61 /* FullScreenCollectionViewCell.swift */,
+				FA6CF3A526E00ED400EA0A61 /* FullScreenCollectionViewCell.xib */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -171,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6CF3A726E00ED400EA0A61 /* FullScreenCollectionViewCell.xib in Resources */,
 				FA6CF3A026DFCCCC00EA0A61 /* PhotoTableViewCell.xib in Resources */,
 				FA63133526DE87E600134FAB /* LaunchScreen.storyboard in Resources */,
 				FA63133226DE87E600134FAB /* Assets.xcassets in Resources */,
@@ -188,10 +174,12 @@
 				FA6CF39F26DFCCCC00EA0A61 /* PhotoTableViewCell.swift in Sources */,
 				FA58ACC226DEEB1700E83550 /* NetworkService.swift in Sources */,
 				FA63132D26DE87E400134FAB /* PhotoGalleryViewController.swift in Sources */,
+				FA6CF3A326DFFA8100EA0A61 /* FullScreenViewController.swift in Sources */,
 				FA63132926DE87E400134FAB /* AppDelegate.swift in Sources */,
+				FA6CF3A626E00ED400EA0A61 /* FullScreenCollectionViewCell.swift in Sources */,
 				FA58ACCC26DFB88C00E83550 /* NasaPhotoService.swift in Sources */,
 				FA63132B26DE87E400134FAB /* SceneDelegate.swift in Sources */,
-				FA63135926DED5CA00134FAB /* Model.swift in Sources */,
+				FA63135926DED5CA00134FAB /* PhotoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

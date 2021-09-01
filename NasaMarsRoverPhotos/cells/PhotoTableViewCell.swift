@@ -9,10 +9,10 @@ import UIKit
 
 class PhotoTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var PhotoImage: UIImageView!
+    @IBOutlet weak var photoImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        photoImage.contentMode = .scaleAspectFill
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
