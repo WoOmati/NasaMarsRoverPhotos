@@ -8,6 +8,8 @@
 import UIKit
 
 class PhotoGalleryViewController: UIViewController {
+    var photoModel: PhotoModel? = nil
+    let networkDataFetcher = NetworkDataFetcher()
     @IBOutlet weak var Collection: UICollectionView!
     
     override func viewDidLoad() {
@@ -15,19 +17,9 @@ class PhotoGalleryViewController: UIViewController {
         
         setupCollectionView()
         
-        let urlString = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?page%20=1&api_key=DEMO_KEY"
-        guard let url = URL(string: urlString) else { return }
-        URLSession.shared.dataTask(with: url) { (data, responce, error) in
-            DispatchQueue.main.async {
-                if let error = error {
-                    print("Some error")
-                    return
-                }
-                guard let date = data else { return }
-                let someString = String(data: date, encoding: .utf8)
-                print(someString ?? "no data")
-            }
-        }.resume()
+//        let urlString = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?page%20=1&api_key=DEMO_KEY"
+        
+        
     }
     private func setupCollectionView() {
         Collection.delegate = self
@@ -40,7 +32,7 @@ class PhotoGalleryViewController: UIViewController {
 
 extension PhotoGalleryViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
