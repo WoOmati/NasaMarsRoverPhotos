@@ -18,6 +18,7 @@
 		FA6CF39F26DFCCCC00EA0A61 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CF39D26DFCCCC00EA0A61 /* PhotoTableViewCell.swift */; };
 		FA6CF3A026DFCCCC00EA0A61 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CF39E26DFCCCC00EA0A61 /* PhotoTableViewCell.xib */; };
 		FA6CF3AB26E0147000EA0A61 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CF3AA26E0147000EA0A61 /* FullScreenViewController.swift */; };
+		FA6CF3AD26E0235E00EA0A61 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CF3AC26E0235E00EA0A61 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FA6CF39D26DFCCCC00EA0A61 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		FA6CF39E26DFCCCC00EA0A61 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
 		FA6CF3AA26E0147000EA0A61 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
+		FA6CF3AC26E0235E00EA0A61 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				FA63132C26DE87E400134FAB /* PhotoGalleryViewController.swift */,
 				FA58ACCB26DFB88C00E83550 /* NasaPhotoService.swift */,
 				FA6CF3AA26E0147000EA0A61 /* FullScreenViewController.swift */,
+				FA6CF3AC26E0235E00EA0A61 /* NetworkService.swift */,
 				FA63135826DED5C900134FAB /* PhotoModel.swift */,
 				FA6CF3A126DFCE1600EA0A61 /* cells */,
 				FA63133126DE87E600134FAB /* Assets.xcassets */,
@@ -163,6 +166,7 @@
 			files = (
 				FA6CF39F26DFCCCC00EA0A61 /* PhotoTableViewCell.swift in Sources */,
 				FA63132D26DE87E400134FAB /* PhotoGalleryViewController.swift in Sources */,
+				FA6CF3AD26E0235E00EA0A61 /* NetworkService.swift in Sources */,
 				FA63132926DE87E400134FAB /* AppDelegate.swift in Sources */,
 				FA58ACCC26DFB88C00E83550 /* NasaPhotoService.swift in Sources */,
 				FA63132B26DE87E400134FAB /* SceneDelegate.swift in Sources */,
