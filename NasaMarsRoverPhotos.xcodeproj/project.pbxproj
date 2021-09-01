@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA58ACC226DEEB1700E83550 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58ACC126DEEB1600E83550 /* NetworkService.swift */; };
+		FA58ACC626DF603300E83550 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58ACC526DF603300E83550 /* NetworkDataFetcher.swift */; };
+		FA63132926DE87E400134FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63132826DE87E400134FAB /* AppDelegate.swift */; };
+		FA63132B26DE87E400134FAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63132A26DE87E400134FAB /* SceneDelegate.swift */; };
+		FA63132D26DE87E400134FAB /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63132C26DE87E400134FAB /* PhotoGalleryViewController.swift */; };
+		FA63133026DE87E400134FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA63132E26DE87E400134FAB /* Main.storyboard */; };
+		FA63133226DE87E600134FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA63133126DE87E600134FAB /* Assets.xcassets */; };
+		FA63133526DE87E600134FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA63133326DE87E600134FAB /* LaunchScreen.storyboard */; };
+		FA63134026DE87E700134FAB /* NasaMarsRoverPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63133F26DE87E700134FAB /* NasaMarsRoverPhotosTests.swift */; };
+		FA63134B26DE87E700134FAB /* NasaMarsRoverPhotosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63134A26DE87E700134FAB /* NasaMarsRoverPhotosUITests.swift */; };
+		FA63135926DED5CA00134FAB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63135826DED5C900134FAB /* Model.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA63133C26DE87E700134FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA63131D26DE87E300134FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA63132426DE87E300134FAB;
+			remoteInfo = NasaMarsRoverPhotos;
+		};
+		FA63134726DE87E700134FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA63131D26DE87E300134FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA63132426DE87E300134FAB;
+			remoteInfo = NasaMarsRoverPhotos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA58ACC126DEEB1600E83550 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FA58ACC526DF603300E83550 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		FA63132526DE87E400134FAB /* NasaMarsRoverPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaMarsRoverPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA63132826DE87E400134FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA63132A26DE87E400134FAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA63132C26DE87E400134FAB /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
+		FA63132F26DE87E400134FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA63133126DE87E600134FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA63133426DE87E600134FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA63133626DE87E600134FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA63133B26DE87E700134FAB /* NasaMarsRoverPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaMarsRoverPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA63133F26DE87E700134FAB /* NasaMarsRoverPhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaMarsRoverPhotosTests.swift; sourceTree = "<group>"; };
+		FA63134126DE87E700134FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA63134626DE87E700134FAB /* NasaMarsRoverPhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaMarsRoverPhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA63134A26DE87E700134FAB /* NasaMarsRoverPhotosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaMarsRoverPhotosUITests.swift; sourceTree = "<group>"; };
+		FA63134C26DE87E700134FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA63135826DED5C900134FAB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA63132226DE87E300134FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA63133826DE87E700134FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA63134326DE87E700134FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA63131C26DE87E300134FAB = {
+			isa = PBXGroup;
+			children = (
+				FA63132726DE87E400134FAB /* NasaMarsRoverPhotos */,
+				FA63133E26DE87E700134FAB /* NasaMarsRoverPhotosTests */,
+				FA63134926DE87E700134FAB /* NasaMarsRoverPhotosUITests */,
+				FA63132626DE87E400134FAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA63132626DE87E400134FAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA63132526DE87E400134FAB /* NasaMarsRoverPhotos.app */,
+				FA63133B26DE87E700134FAB /* NasaMarsRoverPhotosTests.xctest */,
+				FA63134626DE87E700134FAB /* NasaMarsRoverPhotosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA63132726DE87E400134FAB /* NasaMarsRoverPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				FA63132826DE87E400134FAB /* AppDelegate.swift */,
+				FA63132A26DE87E400134FAB /* SceneDelegate.swift */,
+				FA63132C26DE87E400134FAB /* PhotoGalleryViewController.swift */,
+				FA58ACC126DEEB1600E83550 /* NetworkService.swift */,
+				FA58ACC526DF603300E83550 /* NetworkDataFetcher.swift */,
+				FA63135826DED5C900134FAB /* Model.swift */,
+				FA63132E26DE87E400134FAB /* Main.storyboard */,
+				FA63133126DE87E600134FAB /* Assets.xcassets */,
+				FA63133326DE87E600134FAB /* LaunchScreen.storyboard */,
+				FA63133626DE87E600134FAB /* Info.plist */,
+			);
+			path = NasaMarsRoverPhotos;
+			sourceTree = "<group>";
+		};
+		FA63133E26DE87E700134FAB /* NasaMarsRoverPhotosTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA63133F26DE87E700134FAB /* NasaMarsRoverPhotosTests.swift */,
+				FA63134126DE87E700134FAB /* Info.plist */,
+			);
+			path = NasaMarsRoverPhotosTests;
+			sourceTree = "<group>";
+		};
+		FA63134926DE87E700134FAB /* NasaMarsRoverPhotosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA63134A26DE87E700134FAB /* NasaMarsRoverPhotosUITests.swift */,
+				FA63134C26DE87E700134FAB /* Info.plist */,
+			);
+			path = NasaMarsRoverPhotosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA63132426DE87E300134FAB /* NasaMarsRoverPhotos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA63134F26DE87E700134FAB /* Build configuration list for PBXNativeTarget "NasaMarsRoverPhotos" */;
+			buildPhases = (
+				FA63132126DE87E300134FAB /* Sources */,
+				FA63132226DE87E300134FAB /* Frameworks */,
+				FA63132326DE87E300134FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NasaMarsRoverPhotos;
+			productName = NasaMarsRoverPhotos;
+			productReference = FA63132526DE87E400134FAB /* NasaMarsRoverPhotos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA63133A26DE87E700134FAB /* NasaMarsRoverPhotosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA63135226DE87E700134FAB /* Build configuration list for PBXNativeTarget "NasaMarsRoverPhotosTests" */;
+			buildPhases = (
+				FA63133726DE87E700134FAB /* Sources */,
+				FA63133826DE87E700134FAB /* Frameworks */,
+				FA63133926DE87E700134FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA63133D26DE87E700134FAB /* PBXTargetDependency */,
+			);
+			name = NasaMarsRoverPhotosTests;
+			productName = NasaMarsRoverPhotosTests;
+			productReference = FA63133B26DE87E700134FAB /* NasaMarsRoverPhotosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA63134526DE87E700134FAB /* NasaMarsRoverPhotosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA63135526DE87E700134FAB /* Build configuration list for PBXNativeTarget "NasaMarsRoverPhotosUITests" */;
+			buildPhases = (
+				FA63134226DE87E700134FAB /* Sources */,
+				FA63134326DE87E700134FAB /* Frameworks */,
+				FA63134426DE87E700134FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA63134826DE87E700134FAB /* PBXTargetDependency */,
+			);
+			name = NasaMarsRoverPhotosUITests;
+			productName = NasaMarsRoverPhotosUITests;
+			productReference = FA63134626DE87E700134FAB /* NasaMarsRoverPhotosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA63131D26DE87E300134FAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FA63132426DE87E300134FAB = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					FA63133A26DE87E700134FAB = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FA63132426DE87E300134FAB;
+					};
+					FA63134526DE87E700134FAB = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FA63132426DE87E300134FAB;
+					};
+				};
+			};
+			buildConfigurationList = FA63132026DE87E300134FAB /* Build configuration list for PBXProject "NasaMarsRoverPhotos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA63131C26DE87E300134FAB;
+			productRefGroup = FA63132626DE87E400134FAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA63132426DE87E300134FAB /* NasaMarsRoverPhotos */,
+				FA63133A26DE87E700134FAB /* NasaMarsRoverPhotosTests */,
+				FA63134526DE87E700134FAB /* NasaMarsRoverPhotosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA63132326DE87E300134FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA63133526DE87E600134FAB /* LaunchScreen.storyboard in Resources */,
+				FA63133226DE87E600134FAB /* Assets.xcassets in Resources */,
+				FA63133026DE87E400134FAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA63133926DE87E700134FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA63134426DE87E700134FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA63132126DE87E300134FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA58ACC626DF603300E83550 /* NetworkDataFetcher.swift in Sources */,
+				FA58ACC226DEEB1700E83550 /* NetworkService.swift in Sources */,
+				FA63132D26DE87E400134FAB /* PhotoGalleryViewController.swift in Sources */,
+				FA63132926DE87E400134FAB /* AppDelegate.swift in Sources */,
+				FA63132B26DE87E400134FAB /* SceneDelegate.swift in Sources */,
+				FA63135926DED5CA00134FAB /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA63133726DE87E700134FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA63134026DE87E700134FAB /* NasaMarsRoverPhotosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA63134226DE87E700134FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA63134B26DE87E700134FAB /* NasaMarsRoverPhotosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA63133D26DE87E700134FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA63132426DE87E300134FAB /* NasaMarsRoverPhotos */;
+			targetProxy = FA63133C26DE87E700134FAB /* PBXContainerItemProxy */;
+		};
+		FA63134826DE87E700134FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA63132426DE87E300134FAB /* NasaMarsRoverPhotos */;
+			targetProxy = FA63134726DE87E700134FAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA63132E26DE87E400134FAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA63132F26DE87E400134FAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA63133326DE87E600134FAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA63133426DE87E600134FAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA63134D26DE87E700134FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA63134E26DE87E700134FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA63135026DE87E700134FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NasaMarsRoverPhotos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wo-Omati.NasaMarsRoverPhotos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA63135126DE87E700134FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NasaMarsRoverPhotos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wo-Omati.NasaMarsRoverPhotos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA63135326DE87E700134FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NasaMarsRoverPhotosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wo-Omati.NasaMarsRoverPhotosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NasaMarsRoverPhotos.app/NasaMarsRoverPhotos";
+			};
+			name = Debug;
+		};
+		FA63135426DE87E700134FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NasaMarsRoverPhotosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wo-Omati.NasaMarsRoverPhotosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NasaMarsRoverPhotos.app/NasaMarsRoverPhotos";
+			};
+			name = Release;
+		};
+		FA63135626DE87E700134FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NasaMarsRoverPhotosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wo-Omati.NasaMarsRoverPhotosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NasaMarsRoverPhotos;
+			};
+			name = Debug;
+		};
+		FA63135726DE87E700134FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NasaMarsRoverPhotosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wo-Omati.NasaMarsRoverPhotosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NasaMarsRoverPhotos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA63132026DE87E300134FAB /* Build configuration list for PBXProject "NasaMarsRoverPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA63134D26DE87E700134FAB /* Debug */,
+				FA63134E26DE87E700134FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA63134F26DE87E700134FAB /* Build configuration list for PBXNativeTarget "NasaMarsRoverPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA63135026DE87E700134FAB /* Debug */,
+				FA63135126DE87E700134FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA63135226DE87E700134FAB /* Build configuration list for PBXNativeTarget "NasaMarsRoverPhotosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA63135326DE87E700134FAB /* Debug */,
+				FA63135426DE87E700134FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA63135526DE87E700134FAB /* Build configuration list for PBXNativeTarget "NasaMarsRoverPhotosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA63135626DE87E700134FAB /* Debug */,
+				FA63135726DE87E700134FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA63131D26DE87E300134FAB /* Project object */;
+}
