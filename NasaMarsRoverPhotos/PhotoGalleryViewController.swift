@@ -20,7 +20,7 @@ class PhotoGalleryViewController: UIViewController {
         setupCollectionView()
     }
     
-    private func obtainPhotos() {
+    public func obtainPhotos() {
         nasaPhotoService.obtainPhotos { [weak self] latestPhotos in
             guard let latestPhotos = latestPhotos else { return }
             self?.photos = latestPhotos.photos

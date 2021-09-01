@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA58ACC226DEEB1700E83550 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58ACC126DEEB1600E83550 /* NetworkService.swift */; };
 		FA58ACCC26DFB88C00E83550 /* NasaPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58ACCB26DFB88C00E83550 /* NasaPhotoService.swift */; };
 		FA63132926DE87E400134FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63132826DE87E400134FAB /* AppDelegate.swift */; };
 		FA63132B26DE87E400134FAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63132A26DE87E400134FAB /* SceneDelegate.swift */; };
@@ -18,13 +17,10 @@
 		FA63135926DED5CA00134FAB /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63135826DED5C900134FAB /* PhotoModel.swift */; };
 		FA6CF39F26DFCCCC00EA0A61 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CF39D26DFCCCC00EA0A61 /* PhotoTableViewCell.swift */; };
 		FA6CF3A026DFCCCC00EA0A61 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CF39E26DFCCCC00EA0A61 /* PhotoTableViewCell.xib */; };
-		FA6CF3A326DFFA8100EA0A61 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CF3A226DFFA8100EA0A61 /* FullScreenViewController.swift */; };
-		FA6CF3A626E00ED400EA0A61 /* FullScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CF3A426E00ED400EA0A61 /* FullScreenCollectionViewCell.swift */; };
-		FA6CF3A726E00ED400EA0A61 /* FullScreenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CF3A526E00ED400EA0A61 /* FullScreenCollectionViewCell.xib */; };
+		FA6CF3AB26E0147000EA0A61 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CF3AA26E0147000EA0A61 /* FullScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA58ACC126DEEB1600E83550 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FA58ACCB26DFB88C00E83550 /* NasaPhotoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NasaPhotoService.swift; sourceTree = "<group>"; };
 		FA63132526DE87E400134FAB /* NasaMarsRoverPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaMarsRoverPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA63132826DE87E400134FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,9 +33,7 @@
 		FA63135826DED5C900134FAB /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		FA6CF39D26DFCCCC00EA0A61 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		FA6CF39E26DFCCCC00EA0A61 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
-		FA6CF3A226DFFA8100EA0A61 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
-		FA6CF3A426E00ED400EA0A61 /* FullScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCollectionViewCell.swift; sourceTree = "<group>"; };
-		FA6CF3A526E00ED400EA0A61 /* FullScreenCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullScreenCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA6CF3AA26E0147000EA0A61 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +70,8 @@
 				FA63132826DE87E400134FAB /* AppDelegate.swift */,
 				FA63132A26DE87E400134FAB /* SceneDelegate.swift */,
 				FA63132C26DE87E400134FAB /* PhotoGalleryViewController.swift */,
-				FA6CF3A226DFFA8100EA0A61 /* FullScreenViewController.swift */,
-				FA58ACC126DEEB1600E83550 /* NetworkService.swift */,
 				FA58ACCB26DFB88C00E83550 /* NasaPhotoService.swift */,
+				FA6CF3AA26E0147000EA0A61 /* FullScreenViewController.swift */,
 				FA63135826DED5C900134FAB /* PhotoModel.swift */,
 				FA6CF3A126DFCE1600EA0A61 /* cells */,
 				FA63133126DE87E600134FAB /* Assets.xcassets */,
@@ -93,8 +86,6 @@
 			children = (
 				FA6CF39D26DFCCCC00EA0A61 /* PhotoTableViewCell.swift */,
 				FA6CF39E26DFCCCC00EA0A61 /* PhotoTableViewCell.xib */,
-				FA6CF3A426E00ED400EA0A61 /* FullScreenCollectionViewCell.swift */,
-				FA6CF3A526E00ED400EA0A61 /* FullScreenCollectionViewCell.xib */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -156,7 +147,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA6CF3A726E00ED400EA0A61 /* FullScreenCollectionViewCell.xib in Resources */,
 				FA6CF3A026DFCCCC00EA0A61 /* PhotoTableViewCell.xib in Resources */,
 				FA63133526DE87E600134FAB /* LaunchScreen.storyboard in Resources */,
 				FA63133226DE87E600134FAB /* Assets.xcassets in Resources */,
@@ -172,13 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA6CF39F26DFCCCC00EA0A61 /* PhotoTableViewCell.swift in Sources */,
-				FA58ACC226DEEB1700E83550 /* NetworkService.swift in Sources */,
 				FA63132D26DE87E400134FAB /* PhotoGalleryViewController.swift in Sources */,
-				FA6CF3A326DFFA8100EA0A61 /* FullScreenViewController.swift in Sources */,
 				FA63132926DE87E400134FAB /* AppDelegate.swift in Sources */,
-				FA6CF3A626E00ED400EA0A61 /* FullScreenCollectionViewCell.swift in Sources */,
 				FA58ACCC26DFB88C00E83550 /* NasaPhotoService.swift in Sources */,
 				FA63132B26DE87E400134FAB /* SceneDelegate.swift in Sources */,
+				FA6CF3AB26E0147000EA0A61 /* FullScreenViewController.swift in Sources */,
 				FA63135926DED5CA00134FAB /* PhotoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
