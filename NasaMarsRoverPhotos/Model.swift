@@ -7,12 +7,15 @@
 
 import Foundation
 
-struct PhotoModel: Decodable {
-    var resultsCount: [PhotoResults]
+struct LatestPhotos: Decodable {
+    var photos: [Photo]
+    
+    enum CodingKeys: String, CodingKey {
+        case photos = "latest_photos"
+    }
 }
 
-struct PhotoResults: Decodable {
-    
+struct Photo: Decodable {
     let id: UInt
     let imageUrl: String
     let date: String
