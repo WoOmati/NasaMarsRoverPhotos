@@ -33,7 +33,7 @@
                     <navigationItem key="navigationItem" title="Photos" id="AnY-0g-CBL"/>
                     <connections>
                         <outlet property="photosTableView" destination="LIe-vb-29N" id="IMW-Uw-bgd"/>
-                        <segue destination="fuN-fz-nbk" kind="show" id="QSN-KF-ETn"/>
+                        <segue destination="fuN-fz-nbk" kind="show" identifier="showFullScreen" id="QSN-KF-ETn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -48,28 +48,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kbv-SF-6Tq">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUg-v7-gcJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1cs-FB-lb3">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="793"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1cs-FB-lb3" secondAttribute="trailing" id="1sL-Hx-02P"/>
+                                    <constraint firstItem="1cs-FB-lb3" firstAttribute="top" secondItem="jUg-v7-gcJ" secondAttribute="top" id="2Ih-KN-qvt"/>
+                                    <constraint firstAttribute="height" secondItem="1cs-FB-lb3" secondAttribute="height" multiplier="1.01892" id="5Mx-qz-Ux8"/>
+                                    <constraint firstAttribute="width" secondItem="1cs-FB-lb3" secondAttribute="width" id="FC6-Bj-U6Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="1cs-FB-lb3" secondAttribute="bottom" id="Xx9-5w-y06"/>
+                                    <constraint firstItem="1cs-FB-lb3" firstAttribute="leading" secondItem="jUg-v7-gcJ" secondAttribute="leading" id="YNH-hJ-NuQ"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="fuN-fz-nbk" id="Yuf-pH-uSZ"/>
+                                </connections>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sl5-tU-vQK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sl5-tU-vQK" firstAttribute="bottom" secondItem="kbv-SF-6Tq" secondAttribute="bottom" id="DEb-lu-6ho"/>
-                            <constraint firstItem="kbv-SF-6Tq" firstAttribute="top" secondItem="sl5-tU-vQK" secondAttribute="top" id="Zbz-6x-dkt"/>
-                            <constraint firstItem="kbv-SF-6Tq" firstAttribute="leading" secondItem="sl5-tU-vQK" secondAttribute="leading" id="fZR-iL-jJ0"/>
-                            <constraint firstItem="sl5-tU-vQK" firstAttribute="trailing" secondItem="kbv-SF-6Tq" secondAttribute="trailing" id="nmz-kH-grl"/>
+                            <constraint firstItem="jUg-v7-gcJ" firstAttribute="top" secondItem="sl5-tU-vQK" secondAttribute="top" id="BvI-Kn-rqj"/>
+                            <constraint firstItem="jUg-v7-gcJ" firstAttribute="leading" secondItem="sl5-tU-vQK" secondAttribute="leading" id="d6j-eJ-zhC"/>
+                            <constraint firstAttribute="bottom" secondItem="jUg-v7-gcJ" secondAttribute="bottom" id="n3L-7g-HUb"/>
+                            <constraint firstItem="jUg-v7-gcJ" firstAttribute="trailing" secondItem="sl5-tU-vQK" secondAttribute="trailing" id="x6c-dG-vMV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Hnv-Oa-Nu4"/>
                     <connections>
-                        <outlet property="tableView" destination="kbv-SF-6Tq" id="29m-pm-iRD"/>
+                        <outlet property="photoImageView" destination="1cs-FB-lb3" id="44Z-Zf-wmb"/>
+                        <outlet property="scrollView" destination="jUg-v7-gcJ" id="h6F-xU-SUh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z96-vW-saT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1701" y="72"/>
+            <point key="canvasLocation" x="1700.0000000000002" y="71.651785714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qfC-89-TIQ">

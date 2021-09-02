@@ -18,7 +18,6 @@ class NasaPhotoService {
             case .success(let data):
                 do {
                     let images = try JSONDecoder().decode(LatestPhotos.self, from: data)
-                    print(images)
                     response(images)
                 } catch let jsonError {
                     print("Failed to decode JSON", jsonError)

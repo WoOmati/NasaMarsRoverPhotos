@@ -16,8 +16,70 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "10"
             endingLineNumber = "10"
-            landmarkName = "NetworkService"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "02C26F28-EADC-45F0-8B3A-EB79B74E68BA - 5f7815c2f9789d91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NasaMarsRoverPhotos.NetworkService.deinit"
+                  moduleName = "NasaMarsRoverPhotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbook/NasaMarsRoverPhotos/NasaMarsRoverPhotos/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "02C26F28-EADC-45F0-8B3A-EB79B74E68BA - 173ad02b5f5704be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NasaMarsRoverPhotos.NetworkService.__deallocating_deinit"
+                  moduleName = "NasaMarsRoverPhotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbook/NasaMarsRoverPhotos/NasaMarsRoverPhotos/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "02C26F28-EADC-45F0-8B3A-EB79B74E68BA - 9fd5ddb1821e3f46"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NasaMarsRoverPhotos.NetworkService.__allocating_init() -&gt; NasaMarsRoverPhotos.NetworkService"
+                  moduleName = "NasaMarsRoverPhotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbook/NasaMarsRoverPhotos/NasaMarsRoverPhotos/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "02C26F28-EADC-45F0-8B3A-EB79B74E68BA - 740876ab75e8ff30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NasaMarsRoverPhotos.NetworkService.init() -&gt; NasaMarsRoverPhotos.NetworkService"
+                  moduleName = "NasaMarsRoverPhotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbook/NasaMarsRoverPhotos/NasaMarsRoverPhotos/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
